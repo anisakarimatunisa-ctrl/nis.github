@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontak - Toko Tanaman</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5EF;
+            color: #344E41;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #344E41;
+        }
+
+        .garis {
+            width: 80px;
+            height: 4px;
+            background-color: #A3B18A;
+            margin: 10px auto 25px;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px #D8DED2;
+        }
+
+        h2 {
+            color: #588157;
+            border-bottom: 2px solid #DADFD3;
+            padding-bottom: 10px;
+        }
+
+        .info {
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .tombol {
+            display: inline-block;
+            background-color: #879B76;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .tombol:hover {
+            background-color: #588157;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #C8D0C0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: #879B76;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #588157;
+        }
+
+        .footer {
+            text-align: center;
+            color: #6B7565;
+            font-size: 13px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Hubungi Kami</h1>
+    <div class="garis"></div>
+
+    <div class="card">
+        <h2>Kontak Toko</h2>
+
+        <div class="info">
+            <p><b>Nama Toko:</b> Toko Tanaman</p>
+
+            <p><b>WhatsApp:</b> 08XX-XXXX-XXXX</p>
+
+            <p><b>Email:</b> tokotanaman@email.com</p>
+
+            <p><b>Alamat:</b> Bandung, Jawa Barat</p>
+
+            <p><b>Jam Operasional:</b><br>
+            Senin - Sabtu: 08.00 - 17.00 WIB<br>
+            Minggu: 09.00 - 15.00 WIB</p>
+        </div>
+
+        <a href="https://wa.me/6281234567890"
+           class="tombol" target="_blank">
+           Hubungi via WhatsApp
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Kirim Pesan kepada Kami</h2>
+
+        <p>
+            Punya pertanyaan tentang tanaman atau ingin
+            mengetahui informasi produk? Silakan isi
+            formulir di bawah ini.
+        </p>
+
+        <form onsubmit="alert('Terima kasih! Pesan kamu sudah dicatat sebagai contoh.'); return false;">
+
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama kamu" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan email kamu" required>
+
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Tuliskan pesan kamu..." required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Terima kasih telah mengunjungi Toko Tanaman.</p>
+        <p>Temukan keindahan alam bersama kami 🌿</p>
+    </div>
+
+</div>
+
+</body>
+</html>
